@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> My Project</h1>
+        <nav>
+            <a href="#form"> Contact Form</a>
+            <a href="#todo">TO-DO List</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="form">
+    <h2> Contact Form</h2>
+    <form>
+        <Label>Name:</Label>
+        <input type="text" id="name" placeholder="username"><br>
+        <label>Email:</label>
+        <input type="email"  id="email"    placeholder=" write your email"><br>
+        <Label>College Name:</Label>
+        <input type="text"  id="College"placeholder="College name"><br>
+        <label>Roll No.:</label>
+        <input type="number" id="Roll no"   placeholder="enter number"><br>
+        <label>Mobile No.</label>
+        <input type ="text" id="Mobile No"     placeholder="mobile number"><br>
+        <label>Address</label>
+        <input type="text" id="Address"  placeholder="type address">
+        <button type="submit">Submit</button> 
+    </form>
+        </section>
+    <!-- to do list-->
+     <section id="todo">
+        <h2>To-do list</h2>
+        <input type="text" id=" taskInput" placeholder="enter task">
+        <button   type= "button" onclick ="addTask()">Add</button> 
+        <ul id="taskList"></ul>
+    </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

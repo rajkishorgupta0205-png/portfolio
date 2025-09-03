@@ -1,0 +1,57 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+header{
+   background:teal;
+   color: white;
+   padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+header nav a{
+   color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+ form{
+   display: grid;
+   gap: 10px;
+   grid-template-columns: 1fr;
+   width: 300px;
+}
+.container{
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+}
+input  textarea button{
+   padding: 10px;
+   color: white;
+   cursor:pointer;
+}
+#taskList li{
+   list-style: none;
+   margin: 5px 0;
+   background: #f0f0f0;
+   padding: 8px;
+   border-radius: 4px;
+   display: flex ;
+   justify-content:space-between;
+}
+#taskList button{
+   background: red;
+   color: white;
+   border:none;
+   padding:3px 6px;
+   cursor:pointer;
+
+}
+ @media(max-width: 600px){
+   .container{
+      flex-direction: column;
+      align-items: center;
+   }
+}
